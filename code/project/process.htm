@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How We Make Our Product Safe For Customers</title>
+    <link rel="stylesheet" href="../project/css/process.css">
+    <link rel="stylesheet" href="../project/css/media.css">
+    <link rel="shortcut icon" href="../project/images/ico.ico" type="image/x-icon">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<body id="body">
+    <span id="linenav">☰</span>
+
+    <div class="secondarynav" id="secondarynav">
+        <ul>
+            <li id="cross">❌</li>
+            <li class="snavoption"><a class="sechome"     href="../project/Hemoly.php" >Home</a></li>
+            <li class="snavoption"><a class="secabout"    href="../project/about.htm" >About</a></li>
+            <li class="snavoption"><a class="secproduct"  href="../project/product.htm" >Product</a></li>
+            <li class="snavoption"><a class="secprocess"  href="../project/process.htm" >Process</a></li>
+            <li class="snavoption"><a class="seccontact"  href="../project/contact.php" >Contact</a></li>
+            <li class="snavoption"><a class="secbranches" href="../project/branches.htm" >Branches</a></li>
+        </ul>
+    </div>
+
+    <header onmouseleave="product2()">
+        <a class="logo2" href="../project/Hemoly.php"><img src="../project/images/Logo hemoly name.png" width="150vw"></a>
+        <ul>
+
+            <li class="logo"><img src="../project/images/Logo hemoly name.png" width="150vw">
+            </li>
+            <li><a class="home" href="../project/Hemoly.php" onmouseenter="product2()">Home</a></li>
+
+            <li><a id="product" class="product" href="../project/product.htm" onmouseenter="product()">Products<span style="font-size: small;">▼</span></a>
+                <ul class="productnav" id="productnav" onmouseleave="product3()">
+                    <li><a href="milk.htm" class="productnavelem" id="productnavelem">Milk</a></li>
+                    <li><a href="curd.htm" class="productnavelem" id="productnavelem">Curd</a></li>
+                    <li><a href="ghee.htm" class="productnavelem" id="productnavelem">Ghee</a></li>
+                    <li><a href="flavmilk.htm" class="productnavelem" id="productnavelem">FlavMilk</a></li>
+                    <li><a href="butter.htm" class="productnavelem" id="productnavelem">Butter</a></li>
+                    <li><a href="paneer.htm" class="productnavelem" id="productnavelem">Paneer</a></li>
+                </ul>
+            </li>
+
+            <li><a class="about" href="../project/about.htm" onmouseenter="product2()">About</a></li>
+            <li><a class="process" href="../project/process.htm" onmouseenter="product2()">Process</a></li>
+            <li><a class="contact" href="../project/contact.php"onmouseenter="product2()">Contact</a></li>
+            <li><a class="branches" href="../project/branches.htm" onmouseenter="product2()">Branches</a></li>
+        </ul>
+        
+
+        <div class="movingimg"><img src="../project/images/cow.png" width="40px"></div>
+
+
+    </header>
+
+    <main>
+        <div class="buttoncenter">
+            <button class="nightmodebutton" onclick="nightmode()">☾</button>
+            <button class="normalmodebutton" onclick="normalmode()">☼</button>
+        </div>
+
+        <div class="processtab">
+
+            <H1 class="heading">PROCESSING<div class="line"></div>
+            </H1>
+
+            <div class="processflex">
+                <hr>
+
+                <div class="processcontent">
+                    <div class="flexone">
+                        <div class="procurement">
+                            <h1>Milk Procurement</h1>
+                            <p class="procurcontent">Quality of the dairy depends on the quality of the
+                                milk procured. This has made milk procurement an important function in
+                                the modern dairying industry.<br>
+                                The quality of milk determines the quality of all its products. This has
+                                made milk procurement an important function in the modern dairy industry
+                                and our dairy is no exception.
+                            </p>
+                        </div>
+                        <div class="firstslide">
+                            <img src="../project/images/producement1.jpg" class="processimage1">
+                            <img src="../project/images/producement2.jpg" class="processimage1">
+                            <img src="../project/images/producement3main.jpg" class="processimage1">
+                        </div>
+                    </div>
+                    <hr>
+
+
+                    <div class="flextwo">
+                        <div class="processing">
+                            <h1>Milk Processing</h1>
+                            <p class="procurcontent">Milk contains large number of microorganisms
+                                making it perishable. We process our milk at our main dairy in
+                                Karnampet, equipped with modern state of the art machineries.<br>
+                                Supplied by Tetra- Pak and Imported from Sweden, Our state of the
+                                art modern daily plant is equipped with the latest technology and
+                                machinery. The present handling capacity of the plant is
+                                equivalent to 4.0 lakhs of liquid milk.
+                            </p>
+
+                        </div>
+                        <div class="secondslide">
+                            <img src="../project/images/processing1.jpg" class="processimage2">
+                            <img src="../project/images/processing2.jpg" class="processimage2">
+                            <img src="../project/images/processing3.jpg" class="processimage2">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="flexthree">
+                        <div class="packaging">
+                            <h1> Milk Products Packaging</h1>
+                            <p class="procurcontent">Milk and milk products are packed in
+                                conducive and controlled environment to maintain the product
+                                quality. Higher standard packing materials are used for primary
+                                and secondary packaging. All the packing materials are food
+                                grade materials which meets the industry standard.<br>
+                            </p>
+
+                        </div>
+                        <div class="thirdslide">
+                            <img src="../project/images/packaging1.jpg" class="processimage3">
+                            <img src="../project/images/packaging2.jpg" class="processimage3">
+                            <img src="../project/images/packaging3.jpg" class="processimage3">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="flexfour">
+                        <div class="logistics">
+                            <h1>Milk Logistics</h1>
+                            <p class="procurcontent">Processed & hygienically packed Hemoly milk is transported through
+                                insulated trucks to various parts inside the city & the other urban
+                                locations.<br>
+                                Throughout the distribution, safety of the pack is constantly checked
+                                for. Equipped with a good distribution network in the parts of Jodhpur
+                                and Jaipur, our packages reach the stores on time.
+                            </p>
+
+                        </div>
+                        <div class="forthslide">
+                            <img src="../project/images/logistics1main.jpg" class="processimage4">
+                            <img src="../project/images/logistics2main.jpg" class="processimage4">
+                            <img src="../project/images/logistics3main.jpg" class="processimage4">
+                        </div>
+                    </div>
+                    <hr>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+
+    </main>
+    <div class="mail">THANKS FOR READING</div>
+    <footer id="footer">
+
+        <div id="time"></div>
+        <div class="footerflex">
+            <div class="contactdetail">
+                <h1>Contact Details</h1>
+                Sri Hemoly Dairy Private Limited<br>
+
+                No.158-A, loco Road,Near Hanuman Mandir
+                ,ratanada - 342001.<br>
+
+                Mobile No : +91 9894986775, 9894956870<br>
+
+                Landline : 2094 - 4789373, 2395682 , 4569363<br>
+
+                For Overseas Enquiry<br>
+
+                Toll Free No : 1800 120 4137<br>
+
+                E-Mail id : ABCD@gmail.com<br>
+
+                GST NO : 33ABCCS6756C1ZN<br>
+
+
+            </div>
+            <div>
+
+                <a class="footerlogo" href="../project/Hemoly.php"><img src="../project/images/Logo hemoly name.png" width="150vw"></a>
+
+            </div>
+
+        </div>
+
+        <p class="footertext">&copy; Copyright 2021, Hemoly dairy Products.</p>
+
+    </footer>
+</body>
+<script type="text/javascript" src="javascript/process.js"></script>
+
+</html>

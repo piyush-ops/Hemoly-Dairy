@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-bg-color: #2874f0;
+    --main-color: rgb(0, 0, 0);
+    --clr-neon:rgb(17, 0, 255);
+    --clr-bg:hsl(323 21% 16%);
+  }
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+    overflow-x:hidden; 
+    background:rgba(228, 201, 250, 0.692);
+}
+/* start of loading overlay */
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: var(--clr-bg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--clr-neon);
+}
+
+.neonbutton{
+    font-size:7em;
+    color: rgb(165, 161, 161);
+    display: inline-block;
+    cursor: default;
+    text-decoration: none;
+    border: var(--clr-neon) .25em solid;
+    padding:0.25em 1em;
+    border-radius:1em;
+    animation: glow 2s linear infinite;
+    position: relative;
+    transition: background-color 200ms linear;
+ }  
+
+ .neonbutton::before{
+     
+    content:""; 
+    animation: shadowglow 2s linear infinite;
+ }
+/* end of loading overlay */
+/* starting of secondary nav code  */
+ #linenav{
+    float: right;
+    cursor: pointer;
+    font-size:3rem;
+    position: sticky;
+    top: 3.5rem;
+    right: 5rem;
+    z-index: 6;
+    display: none;
+}
+
+.sechome{
+    text-decoration: none;
+      color: white;
+    }
+
+.secabout{
+    text-decoration: none; 
+     color: white;
+    }
+
+.secproduct{
+    text-decoration: none; 
+     color: white;
+    }
+
+.secprocess{
+    text-decoration: none; 
+    color: white;
+}
+
+.seccontact{
+    text-decoration: none; 
+     color: white;
+    }
+
+.secbranches{
+    text-decoration: none; 
+     color: white;
+    }
+
+
+.secondarynav{
+    background: rgba(0, 0, 255, 0.818);
+    position: fixed;
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    transform: translateX(-100%);
+    z-index: 2;
+}
+
+.snavoption{
+    padding: 10px;
+    font-size:3rem;
+    list-style: none;
+    color: white;
+    margin-left:10rem;
+    cursor: pointer;
+}
+
+.snavoption:hover{
+    background: rgb(247, 0, 214);
+    border-radius: 1rem;
+}
+
+#cross{
+    list-style: none;
+    font-size:3rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-top: 14rem;
+}
+/* end of secondary nav code  */
+/* start for nav bar  */
+header{
+    height: 10vh;
+    background-color:rgb(245, 245, 250);
+    position: sticky;
+    top: 0%; 
+    width: 100%; 
+    z-index: 5; 
+    border-radius: 1rem;
+    box-shadow: inset .3rem .3rem rgb(59, 58, 58) ;
+}
+.logo2{
+    display: none;
+}
+header ul {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;  
+    
+}
+
+header ul li{
+    list-style: none;
+    padding: 2.5rem;    
+}
+
+header ul li a{
+    
+    text-decoration: none;
+    color: var(--main-color);
+    font-family: 'ubuntu', sans-serif;
+    font-size:2.5rem;
+    padding-left: 1.0rem;
+    padding-right:  1.0rem;
+    border: .3rem solid transparent;
+    border-radius: 1ch;
+    transition: background-color .5s;
+}
+
+.logo2{
+    display: none;
+    position: sticky;
+    left:10rem;
+}
+.logo{
+    margin-right: 10.0rem;
+    max-width: 100%;
+    margin-top: 1em;
+    margin-right: -20rem;
+}
+
+.home{
+    border-radius: 1ch;
+    color: rgb(0, 0, 0);
+    font-size:2.5rem;
+    margin-left: 35rem;
+}
+.branches{
+    border:.3rem solid #ee2073;
+    border-radius: 1ch;
+    background-color: #ee2073;
+    transition: background-color 1s;
+    color: white;
+    font-size:2.5rem;
+}
+.product:hover{
+    border:.3rem solid #ee2073;
+    border-radius: 1ch;
+    background-color: #ee2073;
+    transition: background-color 1s;
+    color: white;
+    font-size:2.5rem;
+}
+
+#product{
+    position: relative;
+}
+.productnav{
+    width: 17rem;
+    height: 25rem;
+    border-top: 2px solid rgba(225, 0, 255, 0.945);
+    background-color:#ee2073;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    border-radius: 1rem;
+    z-index: 2;
+}
+header ul li ul li{
+    padding: 1.5rem;
+}
+
+ .p{
+    position: relative;
+    left:-1%;
+    top: 0%;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    width: 2rem;
+    height: 5rem;
+    background: rgb(245, 245, 250);
+    
+}
+.p2{
+    position: relative;
+    left:1%;
+    top: 0%;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    width: 2rem;
+    height: 5rem;
+    background: rgb(245, 245, 250);
+    
+}
+
+.productnavelem{
+    font-family:  sans-serif;
+    color: white;
+    font-size:2rem;
+    line-height:.5rem   
+
+}
+
+.productnavelem:hover{
+    background-color:rgb(27, 2, 247);
+}
+
+.about:hover{
+    border:.3rem solid #ee2073;
+    border-radius: 1ch;
+    background-color: #ee2073;
+    transition: background-color 1s;
+    color: white;
+    font-size:2.5rem;
+}
+
+.process:hover{
+    border:.3rem solid #ee2073;
+    border-radius: 1ch;
+    background: #ee2073 ;
+    transition: background-color 1s  ;
+     color: white;
+     font-size:2.5rem;
+}
+
+.contact:hover{
+    border:.3rem solid #ee2073;
+    border-radius: 1ch;
+    background-color: #ee2073;
+    transition: background-color 1s;
+    color: white;
+    font-size:2.5rem;
+}
+
+.home:hover{
+    border:.3rem solid #ee2073;
+    border-radius: 1ch;
+    background-color: #ee2073;
+    transition: background-color 1s;
+    color: white;
+    font-size:2.5rem;
+}
+
+/* coding end for nav bar */
+
+
+/* code for moving cow image */
+
+.movingimg{  
+    animation: move 5s 1 forwards;
+} 
+@keyframes move{
+   
+    0%{
+        transform: translate(0%);
+        
+    }
+
+    90%{
+        transform: translateX(95%);
+        opacity: 1;
+    }  
+    100%{
+        transform: translateX(95%);
+        opacity: 0;
+    }
+    
+
+}
+/* code start for branches */
+.branchesflex{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.heading{ 
+    font-family: 'ubuntu', sans-serif; 
+    font: 3.5rem/3.5rem medium;
+    text-align: center;
+    margin-top: 8.0rem;
+    font-weight: bolder;
+    color: #3b4091;
+}
+h1{
+    text-align: center;
+    font-size:4rem;
+   margin-bottom: 3rem;
+    background-color: rgba(0, 0, 0, 0.384);
+    color: white;  
+}
+
+h2{
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+}
+.jodhpur{
+    background-image: url(../images/JODHPUR.jpg);
+    background-color: rgba(194, 191, 24, 0.664);
+    width: 30rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+    background-blend-mode: darken;
+    border-radius:1rem;
+    position: relative;
+   margin:3rem auto;
+    box-shadow: 1rem 1rem .2rem rgba(0,0,0,0.7),3rem 3rem 1rem rgba(0,0,0,0.4);
+    background-blend-mode: lighten;
+
+}
+.jodhpur1{
+    text-align: center;
+    clip-path: circle(28.2% at 50% 50%);
+}
+.jaipur{
+    background-image:url(../images/jaipur.jpeg);
+    background-color: rgb(47, 0, 255);
+    width: 30rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+    background-blend-mode: darken;
+    border-radius:1rem;
+    position: relative;
+   margin:3rem auto;
+    box-shadow: 1rem 1rem .2rem rgba(0,0,0,0.7),3rem 3rem 1rem rgba(0,0,0,0.4);
+    background-blend-mode: lighten;
+}
+.udaipur{
+    background-image: url(../images/udaipur.jpg);
+    background-color: rgba(194, 191, 24, 0.664);
+    width: 30rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+    background-blend-mode: darken;
+    border-radius:1rem;
+    position: relative;
+   margin:3rem auto;
+    box-shadow: 1rem 1rem .2rem rgba(0,0,0,0.7),3rem 3rem 1rem rgba(0,0,0,0.4);
+    background-blend-mode: lighten;
+}
+.barmer{
+    background-image: url(../images/barmer.jpg);
+    background-color: rgb(47, 0, 255);
+    width: 30rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+    background-blend-mode: darken;
+    border-radius:1rem;
+    position: relative;
+   margin:3rem auto;
+    box-shadow: 1rem 1rem .2rem rgba(0,0,0,0.7),3rem 3rem 1rem rgba(0,0,0,0.4);
+    background-blend-mode: lighten;
+}
+.jaisalmer{
+    background-image: url(../images/jaisalmer.jpg);
+    background-color: rgba(194, 191, 24, 0.664);
+    width: 30rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+    background-blend-mode: darken;
+    border-radius:1rem;
+    position: relative;
+   margin:3rem auto;
+    box-shadow: 1rem 1rem .2rem rgba(0,0,0,0.7),3rem 3rem 1rem rgba(0,0,0,0.4);
+    background-blend-mode: lighten;
+}
+.azmer{
+    background-image: url(../images/ajmer.jpg);
+    background-color: rgba(106, 182, 44, 0.658);
+    width: 30rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+    background-blend-mode: darken;
+    border-radius:1rem;
+    position: relative;
+   margin:3rem auto;
+    box-shadow: 1rem 1rem .2rem rgba(0,0,0,0.7),3rem 3rem 1rem rgba(0,0,0,0.4);
+    background-blend-mode: lighten;
+}
+.pushkar{
+    background-image: url(../images/pushkar.jpg);
+    background-color: rgba(194, 191, 24, 0.664);
+    width: 30rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+    background-blend-mode: darken;
+    border-radius:1rem;
+    position: relative;
+   margin:3rem auto;
+    box-shadow: 1rem 1rem .2rem rgba(0,0,0,0.7),3rem 3rem 1rem rgba(0,0,0,0.4);
+    background-blend-mode: lighten;
+}
+.dholpur{
+    background-image: url(../images/dholpur.jpg);
+    background-color: rgba(0, 255, 157, 0.603);
+    width: 30rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+    background-blend-mode: darken;
+    border-radius:1rem;
+    position: relative;
+   margin:3rem auto;
+    box-shadow: 1rem 1rem .2rem rgba(0,0,0,0.7),3rem 3rem 1rem rgba(0,0,0,0.4);
+    background-blend-mode: lighten;
+}
+.ranakpur{
+    background-image: url(../images/ranakpur.jpg);
+    background-color: rgba(194, 191, 24, 0.664);
+    width: 30rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+    background-blend-mode: darken;
+    border-radius:1rem;
+    position: relative;
+   margin:3rem auto;
+    box-shadow: 1rem 1rem .2rem rgba(0,0,0,0.7),3rem 3rem 1rem rgba(0,0,0,0.4);
+    background-blend-mode: lighten;
+}
+.bhilwara{
+    background-image: url(../images/bhilwara.jpg);
+    background-color: rgba(229, 255, 0, 0.548);
+    width: 30rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+    background-blend-mode: darken;
+    border-radius:1rem;
+    position: relative;
+   margin:3rem auto;
+    box-shadow: 1rem 1rem .2rem rgba(0,0,0,0.7),3rem 3rem 1rem rgba(0,0,0,0.4);
+    background-blend-mode: lighten;
+}
+.kota{
+    background-image: url(../images/kota.jpg);
+    background-color: rgba(194, 191, 24, 0.664);
+    width: 30rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+    background-blend-mode: darken;
+    border-radius:1rem;
+    position: relative;
+   margin:3rem auto;
+    box-shadow: 1rem 1rem .2rem rgba(0,0,0,0.7),3rem 3rem 1rem rgba(0,0,0,0.4);
+    background-blend-mode: lighten;
+}
+.bikaner{
+    background-image: url(../images/bikaner.jpg);
+    background-color: rgb(47, 0, 255);
+    width: 30rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+    background-blend-mode: darken;
+    border-radius:1rem;
+    position: relative;
+   margin:3rem auto;
+    box-shadow: 1rem 1rem .2rem rgba(0,0,0,0.7),3rem 3rem 1rem rgba(0,0,0,0.4);
+    background-blend-mode: lighten;
+    
+}
+
+
+/* code end for branches */
+footer{
+    text-align: right;
+    color: white;
+    overflow: hidden;
+    padding-right: 4.0rem; 
+    min-height: 20.6rem;   
+    background:rgba(0, 0, 0, 0.616);
+    font-size: 1.5rem;
+    position: sticky;
+
+}
+
+.footerflex{
+    display: flex;
+    padding: 0 10rem;
+}
+
+.contactdetail{
+   text-align: left;
+   font-size: 1.5rem;
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+}
+
+.footerlogo{
+    padding-left: 20rem;
+}
+
+#time{
+    text-align: right;
+    color: white;
+}
+
+.footertext{
+    text-align:center;
+    background:rgba(0, 0, 0, 0.616) ;
+    width: 110%;
+}

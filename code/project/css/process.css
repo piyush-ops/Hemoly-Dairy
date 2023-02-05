@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-bg-color: #2874f0;
+    --main-color: rgb(0, 0, 0);
+    --clr-neon:rgb(17, 0, 255);
+    --clr-bg:hsl(323 21% 16%);
+  }
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+    overflow-x:hidden;   
+}
+/* start of loading overlay */
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: var(--clr-bg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--clr-neon);
+}
+
+.neonbutton{
+    font-size:7em;
+    color: rgb(165, 161, 161);
+    display: inline-block;
+    cursor: default;
+    text-decoration: none;
+    border: var(--clr-neon) .25em solid;
+    padding:0.25em 1em;
+    border-radius:1em;
+    animation: glow 2s linear infinite;
+    position: relative;
+    transition: background-color 200ms linear;
+ }  
+
+ .neonbutton::before{
+     
+    content:""; 
+    animation: shadowglow 2s linear infinite;
+ }
+/* end of loading overlay */
+/* starting of secondary nav code  */
+ #linenav{
+    float: right;
+    cursor: pointer;
+    font-size:3rem;
+    position: sticky;
+    top: 3.5rem;
+    right: 5rem;
+    z-index: 6;
+    display: none;
+}
+
+.sechome{
+    text-decoration: none;
+      color: white;
+    }
+
+.secabout{
+    text-decoration: none; 
+     color: white;
+    }
+
+.secproduct{
+    text-decoration: none; 
+     color: white;
+    }
+
+.secprocess{
+    text-decoration: none; 
+    color: white;
+}
+
+.seccontact{
+    text-decoration: none; 
+     color: white;
+    }
+
+.secbranches{
+    text-decoration: none; 
+     color: white;
+    }
+
+
+.secondarynav{
+    background: rgba(0, 0, 255, 0.818);
+    position: fixed;
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    transform: translateX(-100%);
+    z-index: 2;
+}
+
+.snavoption{
+    padding: 10px;
+    font-size:3rem;
+    list-style: none;
+    color: white;
+    margin-left:10rem;
+    cursor: pointer;
+}
+
+.snavoption:hover{
+    background: rgb(247, 0, 214);
+    border-radius: 1rem;
+}
+
+#cross{
+    list-style: none;
+    font-size:3rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-top: 14rem;
+}
+/* end of secondary nav code  */
+/* start for nav bar  */
+header{
+    height: 10vh;
+    background-color:rgb(245, 245, 250);
+    position: sticky;
+    top: 0%; 
+    width: 100%; 
+    z-index: 5; 
+    border-radius: 1rem;
+    box-shadow: inset .3rem .3rem rgb(59, 58, 58) ;
+}
+.logo2{
+    display: none;
+}
+header ul {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;  
+    
+}
+
+header ul li{
+    list-style: none;
+    padding: 2.5rem;    
+}
+
+header ul li a{
+    
+    text-decoration: none;
+    color: var(--main-color);
+    font-family: 'ubuntu', sans-serif;
+    font-size:2.5rem;
+    padding-left: 1.0rem;
+    padding-right:  1.0rem;
+    border: .3rem solid transparent;
+    border-radius: 1ch;
+    transition: background-color .5s;
+}
+
+.logo2{
+    display: none;
+    position: sticky;
+    left:10rem;
+}
+.logo{
+    margin-right: 10.0rem;
+    max-width: 100%;
+    margin-top: 1em;
+    margin-right: -20rem;
+}
+
+.home{
+    border-radius: 1ch;
+    color: rgb(0, 0, 0);
+    font-size:2.5rem;
+    margin-left: 35rem;
+}
+.process{
+    border:.3rem solid #ee2073;
+    border-radius: 1ch;
+    background-color: #ee2073;
+    transition: background-color 1s;
+    color: white;
+    font-size:2.5rem;
+}
+.product:hover{
+    border:.3rem solid #ee2073;
+    border-radius: 1ch;
+    background-color: #ee2073;
+    transition: background-color 1s;
+    color: white;
+    font-size:2.5rem;
+}
+
+#product{
+    position: relative;
+}
+.productnav{
+    width: 17rem;
+    height: 25rem;
+    border-top: 2px solid rgba(225, 0, 255, 0.945);
+    background-color:#ee2073;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    border-radius: 1rem;
+    z-index: 2;
+}
+header ul li ul li{
+    padding: 1.5rem;
+}
+
+ .p{
+    position: relative;
+    left:-1%;
+    top: 0%;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    width: 2rem;
+    height: 5rem;
+    background: rgb(245, 245, 250);
+    
+}
+.p2{
+    position: relative;
+    left:1%;
+    top: 0%;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    width: 2rem;
+    height: 5rem;
+    background: rgb(245, 245, 250);
+    
+}
+
+.productnavelem{
+    font-family:  sans-serif;
+    color: white;
+    font-size:2rem;
+    line-height:.5rem   
+
+}
+
+.productnavelem:hover{
+    background-color:rgb(27, 2, 247);
+}
+
+.about:hover{
+    border:.3rem solid #ee2073;
+    border-radius: 1ch;
+    background-color: #ee2073;
+    transition: background-color 1s;
+    color: white;
+    font-size:2.5rem;
+}
+
+.home:hover{
+    border:.3rem solid #ee2073;
+    border-radius: 1ch;
+    background: #ee2073 ;
+    transition: background-color 1s  ;
+     color: white;
+     font-size:2.5rem;
+}
+
+.contact:hover{
+    border:.3rem solid #ee2073;
+    border-radius: 1ch;
+    background-color: #ee2073;
+    transition: background-color 1s;
+    color: white;
+    font-size:2.5rem;
+}
+
+.branches:hover{
+    border:.3rem solid #ee2073;
+    border-radius: 1ch;
+    background-color: #ee2073;
+    transition: background-color 1s;
+    color: white;
+    font-size:2.5rem;
+}
+
+/* coding end for nav bar */
+
+/* code for moving cow image */
+
+.movingimg{  
+    animation: move 5s 1 forwards;
+} 
+
+.line{
+    background:rgb(85, 32, 32);
+    width: 100%;
+    height: .1rem;
+    position: absolute;
+
+}
+.buttoncenter{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: right;
+    margin-right: 5rem;
+}
+.nightmodebutton{
+    background-color: unset;
+
+    font-size: 3rem;
+    color:rgb(46, 87, 5);
+
+    border: unset;
+    transition: background-color .5s linear, color .5s linear;
+    cursor: pointer;
+    margin: 1rem 5rem;
+}
+.nightmodebutton:hover{
+    color: #1100ff;
+    border-radius: 2rem;
+}
+
+.normalmodebutton{
+    background-color: unset;
+    color:rgb(46, 87, 5);
+    font-size: 3rem;
+    width: 2rem;
+
+    border: unset;
+    transition: background-color .5s linear, color .5s linear;
+    margin: 1rem;
+    cursor: pointer;
+}
+.normalmodebutton:hover{
+
+    color: #ff0000;
+    border-radius: 2rem;
+}
+
+.heading{
+   position: relative;
+    margin: 5rem;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.processing{
+    margin: 4rem;
+    font-size: 4rem;
+}
+
+.procurement{
+    margin: 4rem;
+    font-size: 3rem;
+
+}
+
+.packaging{
+    margin: 4rem;
+    font-size: 4rem;
+}
+
+.logistics{
+    margin: 4rem;
+    font-size: 4rem;
+}
+
+.procurcontent{
+    font-size: 2.5rem;
+    margin: 1rem 10rem 0 0;
+    font: FlamaLight;
+}
+
+.flexone{
+    display: flex;
+    background-color: blanchedalmond;
+}
+
+.flextwo{
+    display: flex;
+    background-color: rgb(230, 227, 224);
+    flex-direction: row-reverse;
+}
+
+.flexthree{
+    display: flex;
+    background-color: rgb(185, 177, 169);
+
+}
+
+.flexfour{
+    display: flex;
+    background-color: rgb(231, 195, 158);
+    flex-direction: row-reverse;
+}
+
+.firstslide{
+    position: relative;
+    width: 200rem;
+    height: 50rem;
+}
+
+.processimage1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.secondslide{
+    position: relative;
+    width: 280rem;
+    height: 50rem;
+}
+
+.processimage2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.thirdslide{
+    position: relative;
+    width: 307rem;
+    height: 50rem;
+}
+
+.processimage3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.forthslide{
+    position: relative;
+    width: 235rem;
+    height: 50rem;
+}
+
+.processimage4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.mail{
+    background: rgb(21, 82, 9);
+    width: 40rem;
+    height: 8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+   position: relative;
+   display: grid;
+   align-items: center;
+   font-weight: bold;
+  margin: auto;
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+   /* border: 2px solid rgb(7, 107, 7); */
+   border-radius: 10px;
+}
+/* 
+.mail::before{
+    content: "";
+    background: rgb(255, 137, 2);
+    width: 40rem;
+    height: 8rem;
+    text-align: center;
+    text-transform: uppercase;
+    display: grid;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+     left: 0%;
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: transform 600ms;
+    border: 2px solid rgb(2, 120, 255);
+    border-radius: 10px;
+} 
+
+.mail:hover::before{
+    transform: rotateX(270deg);
+    transition: all .5s linear .3s;
+    transform-origin: top;
+}    */
+
+.mail::after{
+    content: "Message inside";
+    background: rgb(60, 0, 78);
+    width: 40rem;
+    height: 8rem;
+    text-align: center;
+    text-transform: uppercase;
+    display: grid;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: rotateX(0deg);
+    transform-origin: bottom;
+    transition: transform 400ms linear 300ms;
+    /* border: 2px solid rgb(24, 37, 223); */
+   border-radius: 10px;
+}
+
+.mail:hover::after{
+    transform: rotateX(270deg);
+    transition: all .5s linear ;
+    transform-origin: bottom;
+
+} 
+
+footer{
+    text-align: right;
+    color: white;
+    overflow: hidden;
+    padding-right: 4.0rem; 
+    min-height: 21rem;   
+    background:rgba(0, 0, 0, 0.616);
+    font-size: 1.5rem;
+    position: sticky;
+
+}
+
+.footerflex{
+    display: flex;
+    padding: 0 10rem;
+}
+
+.contactdetail{
+   text-align: left;
+   font-size: 1.5rem;
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+}
+
+.footerlogo{
+    padding-left: 20rem;
+}
+
+#time{
+    text-align: right;
+    color: white;
+}
+
+.footertext{
+    text-align:center;
+    background:rgba(0, 0, 0, 0.616) ;
+    width: 110%;
+}
+@keyframes move{
+   
+    0%{
+        transform: translate(0%);
+        
+    }
+
+    90%{
+        transform: translateX(95%);
+        opacity: 1;
+    }  
+    100%{
+        transform: translateX(95%);
+        opacity: 0;
+    }
+    
+
+}

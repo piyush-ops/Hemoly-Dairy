@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="../project/css/product.css">
+    <link rel="stylesheet" href="../project/css/media.css">
+    <link rel="shortcut icon" href="../project/images/ico.ico" type="image/x-icon">
+</head>
+<body>
+    <span id="linenav">☰</span>
+
+    <div class="secondarynav" id="secondarynav">
+        <ul>
+            <li id="cross">❌</li>
+            <li class="snavoption"><a class="sechome"     href="../project/Hemoly.htm" >Home</a></li>
+            <li class="snavoption"><a class="secabout"    href="../project/about.htm" >About</a></li>
+            <li class="snavoption"><a class="secproduct"  href="../project/product.htm" >Product</a></li>
+            <li class="snavoption"><a class="secprocess"  href="../project/process.htm" >Process</a></li>
+            <li class="snavoption"><a class="seccontact"  href="../project/Contact.php" >Contact</a></li>
+            <li class="snavoption"><a class="secbranches" href="../project/branches.htm" >Branches</a></li>
+            <li class="snavoption"><a class="logout1" href="../project/logout.php" title="logout" width="20px">logout</a></li>
+        </ul>
+    </div>
+
+    <header onmouseleave="product2()">
+        <a class="logo2" href="../project/Hemoly.php"><img src="../project/images/Logo hemoly name.png" width="150vw"></a>
+        <ul>
+
+            <li class="logo"><img src="../project/images/Logo hemoly name.png" width="150vw">
+            </li>
+            <li><a class="home" href="../project/Hemoly.php" onmouseenter="product2()">Home</a></li>
+
+            <li><a id="product" class="product" href="../project/product.htm" onmouseenter="product()">Products<span style="font-size: small;">▼</span></a>
+                <ul class="productnav" id="productnav" onmouseleave="product3()">
+                    <li><a href="../project/milk.htm" class="productnavelem" id="productnavelem">Milk</a></li>
+                    <li><a href="../project/curd.htm" class="productnavelem" id="productnavelem">Curd</a></li>
+                    <li><a href="../project/ghee.htm" class="productnavelem" id="productnavelem">Ghee</a></li>
+                    <li><a href="../project/flavmilk.htm" class="productnavelem" id="productnavelem">FlavMilk</a></li>
+                    <li><a href="../project/butter.htm" class="productnavelem" id="productnavelem">Butter</a></li>
+                    <li><a href="../project/paneer.htm" class="productnavelem" id="productnavelem">Paneer</a></li>
+                </ul>
+            </li>
+
+            <li><a class="about" href="../project/about.htm" onmouseenter="product2()">About</a></li>
+            <li><a class="process" href="../project/process.htm" onmouseenter="product2()">Process</a></li>
+            <li><a class="contact" href="../project/contact.php"onmouseenter="product2()">Contact</a></li>
+            <li><a class="branches" href="../project/branches.htm" onmouseenter="product2()">Branches</a></li>
+        </ul>
+        
+
+        <div class="movingimg"><img src="../project/images/cow.png" width="40px"></div>
+        <!-- <audio id="audio" autoplay>
+            <source src="../project//media/frishycow.mp3">
+        </audio> -->
+
+    </header>
+    
+    <div id="imgbnr" class="imgbnr">
+        <img src="../project/images/milk-banner.jpg"  width="100%">
+        
+            <div class="centertext1"><h3>PRODUCTS</h3></div>
+            </div>
+                <div class="bannerlink1">
+            <a class="bannercls" href="../project/Hemoly.php">Home /</a>Products 
+        </div>
+
+    </div>
+
+    <div class="minicontainerproducts">
+
+        <!-- <div id="Headingproduct" class="Headingproduct">
+            <H3 class="heading">PRODUCTS</H3>
+        </div>
+
+        <div class="Head2">
+            <h2 class="subtitle">We bring happiness to every individual with our high-quality products.</h2>
+        </div> -->
+
+        <div  id="productheading"  class="minicontainer">
+
+            <div class="productcontainer">
+
+                <div class="milk"><img src="../project/images/Milk Pic.png" width="350rem">
+                    <div class="productheading">MILK</div>
+                    <div class="milktext">Toned milk from strikes the perfect balance between double toned
+                        milk & standardised milk.</div>
+                    <div><a class="milkread" href="../project/milk.htm">Read More</a></div>
+                </div>
+
+                <div class="curd"><img src="../project/images/curd.png" width="350rem">
+                    <div class="productheading">CURD</div>
+                    <div class="curdtext">Curdled from the farm fresh milk obtained from the dairy cows, curd from
+                        Hemoly is tastier.
+                    </div>
+                    <div><a class="curdread" href="../project/curd.htm">Read More</a></div>
+                </div>
+
+                <div class="ghee"><img src="../project/images/ghee.png" width="350rem">
+                    <div class="productheading">GHEE</div>
+                    <div class="gheetext">Clarified from the finest of butter, ghee is rich in antioxidants
+                        aiding the absorption of vitamins and minerals.</div>
+                    <div><a class="gheeread" href="../project/ghee.htm">Read More</a></div>
+                </div>
+           </div>
+           <div class="productcontainer2">
+                <div class="flavmilk"><img src="../project/images/flavoured milk.png" width="350rem">
+                    <div class="productheading">Flavoured milk</div>
+                    <div class="flavmilktext"> Rose milk is the perfect choice. The refreshing taste of the
+                        milk lingers longer on your hearts.Kids will love this for sure.</div>
+                    <div><a class="flavmilkread" href="../project/flavmilk.htm">Read More</a></div>
+                </div>
+
+                <div class="butter"><img src="../project/images/butter.png" width="350rem">
+                    <div class="productheading">BUTTER</div>
+                    <div class="buttertext">Obtained from the fresh dairy milk, cooking butter is rich in fat
+                        and adds flavour to the food.</div>
+                    <div><a class="butterread" href="../project/butter.htm">Read More</a></div>
+                </div>
+
+                <div class="paneer"><img src="../project/images/paneer.png" width="350rem">
+                    <div class="productheading">PANEER</div>
+                    <div class="paneertext">Paneer plays an important part in every vegetarians life. paneer
+                        is so soft that it wobbles even at the slightest touch.</div>
+                    <div><a class="paneerread" href="../project/paneer.htm">Read More</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+
+        <div id="time"></div>
+        <div class="footerflex">
+            <div class="contactdetail">
+                <h1>Contact Details</h1>
+                Sri Hemoly Dairy Private Limited<br>
+
+                No.158-A, loco Road,Near Hanuman Mandir
+                ,ratanada - 342001.<br>
+
+                Mobile No : +91 9894986775, 9894956870<br>
+
+                Landline : 2094 - 4789373, 2395682 , 4569363<br>
+
+                For Overseas Enquiry<br>
+
+                Toll Free No : 1800 120 4137<br>
+
+                E-Mail id : ABCD@gmail.com<br>
+
+                GST NO : 33ABCCS6756C1ZN<br>
+
+
+            </div>
+            <div>
+
+                <a class="footerlogo" href="../project/Hemoly.php"><img src="../project/images/Logo hemoly name.png" width="150vw"></a>
+                
+            </div>
+
+        </div>
+
+        <p class="footertext">&copy; Copyright 2021, Hemoly dairy Products.</p>
+
+    </footer>
+
+</body>
+<script type="text/javascript" src="javascript/hemoly.js"></script>
+</html>
